@@ -1,0 +1,26 @@
+<!-- layouts/partials/education.html -->
+{{ if .Site.Data.config.education.enable }}
+<div class="container mx-auto p-8">
+  <div class="grid grid-cols-12 gap-8">
+
+    <!-- Left Column -->
+    <div class="col-span-2">
+      <h2 class="text-2xl font-semibold ">{{ .Site.Data.config.education.title | default "Educations" }}
+      </h2>
+    </div>
+
+    <!-- Vertical Divider -->
+    <div class="col-span-1 border-l-2 border-gray-500"></div>
+
+    <!-- Right Column (education List) -->
+    <div class="col-span-9">
+      {{ range .Site.Data.config.education.list }}
+      <div class="mt-6">
+        <h3 class="text-xl font-bold">{{ .degree }}</h3>
+        <p class="text-sm">{{ .dates }} | {{ .university }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en" class="bg-white dark:bg-gray-900">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Site.Title }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- <body class="text-gray-900 dark:text-gray-100 font-sans"> -->
+<body class="text-gray-900 dark:text-gray-100 font-sans flex justify-center">
+  <div class="w-[90%] sm:w-[80%] md:w-2/3 max-w-5xl">
+  {{ partial "profile.html" . }}
+  {{ partial "summary.html" . }}
+  {{ partial "tags.html" . }}
+  {{ partial "skills.html" . }}
+  {{ partial "experience.html" . }}
+  {{ partial "projects.html" . }}
+  {{ partial "education.html" . }}
+  {{ partial "certifications" . }}
+  {{ partial "languages" . }}
+  {{ partial "interests" . }}
+  </div>
+</body>
+</html>

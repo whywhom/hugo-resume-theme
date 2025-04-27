@@ -23,3 +23,35 @@ go.work.sum
 
 # env file
 .env
+
+
+# Hugo build output
+/public/
+/resources/
+/hugo_stats.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node.js (if used for Tailwind, PostCSS, etc.)
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Optional: if you use Netlify or similar services, you might want to ignore local config
+/netlify.toml

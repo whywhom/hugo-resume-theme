@@ -1,0 +1,31 @@
+<!-- layouts/partials/projects.html -->
+<div class="container mx-auto p-8">
+  <div class="grid grid-cols-12 gap-8">
+    {{ if .Site.Data.config.projects.enable }}
+    <!-- Left Column -->
+    <div class="col-span-2">
+      <h2 class="text-2xl font-semibold">{{ .Site.Data.config.projects.title | default "Projects" }}
+      </h2>
+    </div>
+
+    <!-- Vertical Divider -->
+    <div class="col-span-1 border-l-2 border-gray-500"></div>
+
+    <!-- Right Column (Experience List) -->
+    <div class="col-span-9">
+      {{ range .Site.Data.config.projects.list }}
+      <div class="mt-6">
+        <h3 class="text-xl font-bold">{{ .title }}</h3>
+        <p class="text-sm">{{ .dates }} | {{ .meta }}</p>
+        <div class="mt-2">
+          {{ range .items }}
+          <p><span class="text-xl mr-2">•</span> {{ .details }}</p>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ else }}
+    {{ end }}
+  </div>
+</div>

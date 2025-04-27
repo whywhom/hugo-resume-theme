@@ -1,0 +1,25 @@
+<!-- layouts/partials/profile.html -->
+{{ if .Site.Data.config.profile.enable }}
+<div class="container mx-auto py-8 flex items-center">
+    <!-- 左边：头像 + 名字/职位（不flex内部） -->
+    <div class="w-1/3 flex items-center">
+      <img src="{{ .Site.Data.config.profile.avatar }}" alt="Avatar" class="w-24 h-24 rounded-full object-cover">
+      <div class="ml-4">
+        <h1 class="text-3xl font-bold">{{ .Site.Data.config.profile.name }}</h1>
+        <p class="text-gray-600">{{ .Site.Data.config.profile.tagline }}</p>
+      </div>
+    </div>
+
+    <!-- 右边：联系信息区域（右侧单独flex） -->
+    <div class="w-2/3">
+        <div class="grid grid-cols-3 gap-x-8 gap-y-2 justify-end">
+          {{ range .Site.Data.config.contact.list }}
+            <div class="flex items-center space-x-2">
+              <i class="{{ .icon }} text-blue-500"></i>
+              <a href="{{ .url }}" class="text-gray-800 hover:text-blue-500">{{ .text }}</a>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+  </div>
+{{ end }}

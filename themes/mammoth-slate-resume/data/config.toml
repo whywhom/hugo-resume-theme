@@ -1,0 +1,301 @@
+[profile]
+    enable = true
+    name = "Andy Wu"
+    tagline = "Senior Android Engineer"
+    avatar = "avatar.png"
+    
+[summary]
+    enable = true
+    title = "summary"
+    text = "Experienced Senior Android Developer with 10+ years of expertise in designing, developing, and optimizing Android applications. Skilled in Kotlin, Jetpack Compose, MVVM, and scalable architectures, with a strong focus on performance, UI/UX, and maintainability. Passionate about building high-quality mobile experiences and mentoring junior developers."
+
+[contact]
+    enable = true
+    location = "Auckland, New Zealand"
+
+    [[contact.list]]
+    icon = "fa-solid fa-phone"
+    url = "tel:#"
+    text = "+64 210673367"
+    [[contact.list]]
+    icon = "fa-solid fa-envelope"
+    url = "mailto:#"
+    text = "andywhynz@gmail.com"
+    [[contact.list]]
+    icon = "fa-solid fa-globe"
+    url = "#"
+    text = "www.yourwebsite.com"
+    [[contact.list]]
+    icon = "fab fa-linkedin"
+    url = "https://www.linkedin.com/in/hywu/"
+    text = "LinkedIn Profile"
+
+[education]
+    enable = true
+    title = "教育经历"
+
+    [[education.list]]
+    degree = "PGD in Information Technology"
+    university = "Eastern Institute of Technology"
+    dates = "July 2019"
+    [[education.list]]
+    degree = "M.S. in Communication and Information System"
+    university = "Jilin University"
+    dates = "July 2005"
+
+[skills]
+    enable = true
+    title = "Skills"
+
+    [[skills.list]]
+    title = "Languages & Frameworks: "
+    [[skills.list.items]]
+    details = "Kotlin | Java | Jetpack Compose | Android SDK"
+    
+    [[skills.list]]
+    title = "Architecture & Design Patterns: "
+    [[skills.list.items]]
+    details = "MVVM | Clean Architecture | Android Architecture Components"
+    
+    [[skills.list]]
+    title = "Dependency Injection: "
+    [[skills.list.items]]
+    details = "Dagger | Hilt"
+
+    [[skills.list]]
+    title = "Navigation & UI: "
+    [[skills.list.items]]
+    details = "Navigation Components | Material Design"
+
+    [[skills.list]]
+    title = "App Performance: "
+    [[skills.list.items]]
+    details = "Memory management | Network efficiency | Battery optimization"
+
+    [[skills.list]]
+    title = "Automated Testing: "
+    [[skills.list.items]]
+    details = "Unit tests (JUnit, Mockito, Turbine)"
+
+    [[skills.list]]
+    title = "Professional"
+    [[skills.list.items]]
+    details = "CI/CD & DevOps"
+    [[skills.list.items]]
+    details = "Code Reviews"
+    [[skills.list.items]]
+    details = "Agile Practices"
+    [[skills.list.items]]
+    details = "Mentorship & Knowledge Sharing"
+
+[experience]
+    enable = true
+    title = "工作经历"
+    [[experience.list]]
+    title = "Senior Android Developer"
+    dates = "Mar. 2022 - Present"
+    company = "Spark | Auckland"
+    details = ""
+    [[experience.list.items]]
+    details = "Led the development of features of the Spark App & Skinny Jump App, improving app performance."
+    [[experience.list.items]]
+    details = "Migrated the Skinny Jump App to Jetpack Compose, reducing UI development time by optimizing widgets."
+    [[experience.list.items]]
+    details = "Deployed the app to Google Play Store, ensuring compliance with store policies and optimizing release processes."
+    [[experience.list.items]]
+    details = "Optimized app performance and resolved stability issues, enhancing code quality and efficiency."
+    [[experience.list.items]]
+    details = "Upgraded apps to the latest Android version, ensuring compatibility and optimal performance."
+
+
+    [[experience.list]]
+    title = "Senior Android Developer"
+    dates = "Jan. 2021 - Mar. 2022"
+    company = "MEGA The Privacy Company | Auckland"
+    details = ""
+    [[experience.list.items]]
+    details = "Designed and developed new features of the Android App for MEGA, ensuring high performance and scalability."
+    [[experience.list.items]]
+    details = "Architected the meeting project using MVVM and Kotlin, enhancing maintainability and modularity."
+    [[experience.list.items]]
+    details = "Migrated the app to new Android SDK, ensuring full compatibility with the latest OS updates."
+    [[experience.list.items]]
+    details = "Maintained and optimized app performance by leveraging performance analysis tools to identify and resolve resource inefficiencies, memory leaks, and response time issues."
+    [[experience.list.items]]
+    details = "Collaborated effectively with design and QA teams, efficiently managing requirement changes and ensuring smooth project execution."
+
+    [[experience.list]]
+    title = "Android Engineer"
+    dates = "Jul. 2019 - Jan. 2021"
+    company = "Go Gym Buddy | Auckland"
+    details = ""
+    [[experience.list.items]]
+    details = "Developed, maintained, and released an Android application using Java and Kotlin, ensuring code quality and stability."
+    [[experience.list.items]]
+    details = "Refactored the MVP architecture to improve scalability, maintainability, and overall performance."
+    [[experience.list.items]]
+    details = "Optimized application performance, identifying and addressing bottlenecks to improve speed and reduce memory consumption."
+    [[experience.list.items]]
+    details = "Implemented and released new features, aligning with user feedback and business requirements, enhancing the app’s functionality and user experience."
+    [[experience.list.items]]
+    details = "Utilized best practices in Android development to streamline the development process and ensure consistency across releases."
+
+    [[experience.list]]
+    title = "Senior Technical Manager"
+    dates = "Sep. 2016 – Mar. 2018"
+    company = "Datatist | Shanghai, China"
+    details = ""
+
+    [[experience.list.items]]
+    details = "Led a team of three developers and implemented the Scrum framework to enhance productivity within the Android team."
+    [[experience.list.items]]
+    details = "Designed and developed an easy-to-integrate Android SDK for mass data collection, tailored to customer needs."
+    [[experience.list.items]]
+    details = "Built a hybrid Android application that efficiently processes JSON data from servers and visualizes it using dynamic charts and animations."
+    [[experience.list.items]]
+    details = "Provided technical support to clients, troubleshooting and resolving issues to ensure seamless product integration."
+    [[experience.list.items]]
+    details = "Authored comprehensive technical design documents and specifications for clear development guidelines."
+    [[experience.list.items]]
+    details = "Analyzed client requests and implemented changes to improve functionality and user experience."
+
+    [[experience.list]]
+    title = "Senior Android Engineer"
+    dates = "Dec. 2014 – Sep. 2016"
+    company = "DynamiCode | Shanghai, China"
+    details = ""
+    [[experience.list.items]]
+    details = "Led the development of an Android-based POS project, successfully passing the UnionPay certification test."
+    [[experience.list.items]]
+    details = "Planned, optimized, and refactored existing Android applications for POS terminals to enhance performance and usability."
+    [[experience.list.items]]
+    details = "Developed and launched a new SDK to facilitate seamless integration between customers and the POS terminal."
+
+    [[experience.list]]
+    title = "Senior Android Engineer"
+    dates = "Apr. 2014 - Nov. 2014"
+    company = "DZH Limited | Shanghai, China"
+    details = ""
+    [[experience.list.items]]
+    details = "Collaborated with a mobile team of 40+ members, including Android & iOS developers and testers."
+    [[experience.list.items]]
+    details = "Contributed to the development of multiple financial products for the Android platform."
+    [[experience.list.items]]
+    details = "Designed and implemented a trade module for the stock exchange and a business module for financial transactions."
+    [[experience.list.items]]
+    details = "Enhanced mobile app stability by identifying, debugging, and resolving critical issues."
+    [[experience.list.items]]
+    details = "Proposed and implemented optimal coding methodologies aligned with the latest industry best practices and project requirements."
+
+
+    [[experience.list]]
+    title = "Software Engineer"
+    dates = "Sep. 2005 – Dec. 2013"
+    company = "Hisense | Qingdao, China"
+    details = ""
+    [[experience.list.items]]
+    details = "Led the development of a PC assistant, overseeing PC software integration for Hisense mobile devices."
+    [[experience.list.items]]
+    details = "Developed factory testing applications for mobile phones to ensure quality and performance."
+    [[experience.list.items]]
+    details = "Designed and built multiple applications for the Android and Brew platforms, including Power Saving Assistant, Speech Assistant, and various games."
+    [[experience.list.items]]
+    details = "Contributed to the Hisense smart refrigeration project, enhancing IoT and smart home capabilities."
+
+
+[projects]
+    enable = true
+    title = "参与项目"
+
+[[projects.list]]
+    title = "E-commerce Android App (Jetpack Compose + MVVM)"
+    dates = "Mar. 2022 - Present"
+    meta = "Open Source"
+    details = ""
+    [[projects.list.items]]
+    details = "Developed a full-featured e-commerce Android app using Kotlin and Jetpack Compose, following the MVVM architecture."
+    [[projects.list.items]]
+    details = "Integrated Firebase Authentication, Cloud Firestore for real-time data storage, and Stripe API for secure payment processing."
+    [[projects.list.items]]
+    details = "Designed dynamic UI components using Compose, ensuring responsive layouts across various devices and screen sizes."
+    [[projects.list.items]]
+    details = "Implemented push notifications via Firebase Cloud Messaging (FCM), improving customer engagement and retention."
+
+    [[projects.list]]
+    title = "Fitness Tracking App (Compose + BLE Integration)"
+    dates = "Jan. 2021 - Mar. 2022"
+    meta = "Open Source"
+    details = ""
+    [[projects.list.items]]
+    details = "Built a health and fitness tracking application using Kotlin and Bluetooth Low Energy (BLE) protocols to connect with wearable devices."
+    [[projects.list.items]]
+    details = "Collected and visualized real-time sensor data like heart rate, steps, and calories burned, using custom Compose components and MPAndroidChart."
+    [[projects.list.items]]
+    details = "Optimized data synchronization and caching mechanisms for offline usability with Room and DataStore."
+    [[projects.list.items]]
+    details = "Implemented background location tracking with proper handling for Android 10+ using Foreground Services and notification channels."
+
+    [[projects.list]]
+    title = "Secure Chat App (Android + WebSocket + End-to-End Encryption)"
+    dates = "Jul. 2019 - Jan. 2021"
+    meta = "Open Source"
+    details = ""
+    [[projects.list.items]]
+    details = "Designed and developed a secure messaging app featuring real-time chat powered by WebSocket communication."
+    [[projects.list.items]]
+    details = "Implemented End-to-End Encryption (E2EE) using the Signal Protocol, ensuring message confidentiality and integrity."
+    [[projects.list.items]]
+    details = "Built scalable conversation storage with Room Database, using efficient indexing and lazy loading for long conversations."
+    [[projects.list.items]]
+    details = "Integrated biometric authentication (fingerprint/face ID) for app access control, enhancing user security."
+
+[certifications]
+    enable = true
+    title = "认证"
+    [[certifications.list]]
+    title = "Google Associate Android Developer"
+    year = "2025"
+    [[certifications.list]]
+    title = "Associate Android Developer certification in Kotlin"
+    year = "2024"
+    [[certifications.list]]
+    title = "Azure Fundamentals - Certifications"
+    year = "2024"
+
+[tags]
+    enable = true
+    title = "Tags"
+    [[tags.list]]
+    name = "Kotlin"
+    [[tags.list]]
+    name = "Jetpack Compose"
+    [[tags.list]]
+    name = "BLE / NFC"
+    [[tags.list]]
+    name = "Secure Storage"
+
+[languages]
+    enable = true
+    title = "语言"
+    [[languages.list]]
+    name = "Chinese"
+    level = "Native"
+    [[languages.list]]
+    name = "English"
+    level = "Professional"
+    [[languages.list]]
+    name = "Spanish"
+    level = "Professional"
+
+
+[interests]
+    enable = true
+    title = "兴趣爱好"
+    [[interests.list]]
+    name = "Fitness"
+    [[interests.list]]
+    name = "Travelling"
+    [[interests.list]]
+    name = "Reading"
+    [[interests.list]]
+    name = "Travelling"

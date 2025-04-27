@@ -1,0 +1,26 @@
+<!-- layouts/partials/interests.html -->
+{{ if .Site.Data.config.interests.enable }}
+<div class="container mx-auto p-8">
+  <div class="grid grid-cols-12 gap-8">
+    <!-- Left Column -->
+    <div class="col-span-2">
+      <h2 class="text-2xl font-semibold">{{ .Site.Data.config.interests.title | default "Skills" }}</h2>
+    </div>
+
+    <!-- Vertical Divider -->
+    <div class="col-span-1 border-l-2 border-gray-500"></div>
+
+    <!-- Right Column (Skills List) -->
+    <div class="col-span-9">
+        {{ range .Site.Data.config.interests.list }}
+          <div class="mt-6">
+            <!-- <h3 class="text-xl font-bold">{{ .name }}</h3> -->
+            <div class="mt-2">
+              <h3><span class="text-xl mr-2">•</span> {{ .name }}</h3>
+            </div>
+          </div>
+        {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
