@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white dark:bg-gray-900">
+
+<head>
+	<meta name="generator" content="Hugo 0.135.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My New Hugo Site</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<body class="text-gray-900 dark:text-gray-100 font-sans flex justify-center">
+  <div class="w-[90%] sm:w-[80%] md:w-2/3 max-w-5xl">
+    
+    <div class="container mx-auto p-8">
+    <div class="flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Slate Resume</h1>
+        <div>
+            <button onclick="toggleDarkMode()" class="px-4 py-2 bg-gray-300 dark:bg-gray-700 rounded">Toggle Dark
+                Mode</button>
+            <a href="/download/resume.pdf" class="ml-4 px-4 py-2 bg-blue-500 text-white rounded">Download PDF</a>
+        </div>
+    </div>
+    
+</div>
+<script>
+  if (localStorage.getItem('theme') === 'dark' ||
+      (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark');
+  }
+
+  function toggleDarkMode() {
+    const html = document.documentElement;
+    if (html.classList.contains('dark')) {
+      html.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    } else {
+      html.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    }
+  }
+</script>
+    <div class="bg-white shadow-xl border border-gray-300 dark:bg-gray-900 dark:text-white
+    rounded-lg p-8
+            print:shadow-none print:border-none print:rounded-none print:p-0">
+      
+
+<div class="container mx-auto px-8 py-8 flex items-center">
+    
+    <div class="w-1/2 flex items-center">
+      <img src="avatar.png" alt="Avatar" class="w-24 h-24 rounded-full object-cover">
+      <div class="ml-4">
+        <h1 class="text-3xl font-semibold">Andy Wu</h1>
+        <p class="font-light text-gray-600">Senior Android Engineer</p>
+      </div>
+    </div>
+    
+    
+      <div class="w-1/2">
+  <ul class="space-y-2">
+    
+      <li class="flex items-center space-x-2">
+        <i class="fa-solid fa-phone"></i>
+        <a href="#ZgotmplZ" class="font-light text-gray-800 hover:text-blue-500">&#43;64 210673367</a>
+      </li>
+    
+      <li class="flex items-center space-x-2">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:#" class="font-light text-gray-800 hover:text-blue-500">andywhynz@gmail.com</a>
+      </li>
+    
+      <li class="flex items-center space-x-2">
+        <i class="fa-solid fa-globe"></i>
+        <a href="#" class="font-light text-gray-800 hover:text-blue-500">www.yourwebsite.com</a>
+      </li>
+    
+      <li class="flex items-center space-x-2">
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/hywu/" class="font-light text-gray-800 hover:text-blue-500">LinkedIn Profile</a>
+      </li>
+    
+  </ul>
+</div>
+  </div>
+
+      
+<div class="container mx-auto p-8">
+  <div>
+    <h2 class="text-xl font-semibold mb-4 text-left w-full border-b-2 border-gray-500">
+      Summary
+    </h2>
+    <p class="text-lg font-light leading-relaxed text-justify">
+      Experienced Senior Android Developer with 10&#43; years of expertise in designing, developing, and optimizing Android applications. Skilled in Kotlin, Jetpack Compose, MVVM, and scalable architectures, with a strong focus on performance, UI/UX, and maintainability. Passionate about building high-quality mobile experiences and mentoring junior developers.
+    </p>
+  </div>
+</div>
+
+
+      
+
+<div class="container mx-auto pt-0 pb-0 px-8">
+  <div class="grid grid-cols-12 gap-8">
+    
+    <div class="col-span-2">
+      <h2 class="mt-2 text-xl font-semibold">Tags</h2>
+    </div>
+
+    
+    <div class="col-span-1 border-l-2 border-gray-500"></div>
+
+    
+    <div class="col-span-9">
+          <div class="flex flex-wrap mt-2">
+            
+              <span class="font-light bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-3 py-1 rounded-full m-1">Kotlin</span>
+            
+              <span class="font-light bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-3 py-1 rounded-full m-1">Jetpack Compose</span>
+            
+              <span class="font-light bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-3 py-1 rounded-full m-1">BLE / NFC</span>
+            
+              <span class="font-light bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-3 py-1 rounded-full m-1">Secure Storage</span>
+            
+          </div>
+      
+    </div>
+  </div>
+</div>
+
+      
+
+<div class="container mx-auto pt-0 pb-0 px-8">
+  <div class="grid grid-cols-12 gap-8">
+    
+    <div class="col-span-2">
+      <h2 class="mt-6 text-xl font-semibold">Skills</h2>
+    </div>
+
+    
+    <div class="col-span-1 border-l-2 border-gray-500"></div>
+
+    
+    <div class="col-span-9">
+        
+          <div class="mt-6">
+            <h3 class="text-xl font-light">Languages &amp; Frameworks: </h3>
+            <div class="mt-2">
+              
+                <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> Kotlin | Java | Jetpack Compose | Android SDK</p>
+              
+            </div>
+          </div>
+        
+          <div class="mt-6">
+            <h3 class="text-xl font-light">Architecture &amp; Design Patterns: </h3>
+            <div class="mt-2">
+              
+                <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> MVVM | Clean Architecture | Android Architecture Components</p>
+              
+            </div>
+          </div>
+        
+          <div class="mt-6">
+            <h3 class="text-xl font-light">Dependency Injection: </h3>
+            <div class="mt-2">
+              
+                <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> Dagger | Hilt</p>
+              
+            </div>
+          </div>
+        
+          <div class="mt-6">
+            <h3 class="text-xl font-light">Navigation &amp; UI: </h3>
+            <div class="mt-2">
+              
+                <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> Navigation Components | Material Design</p>
+              
+            </div>
+          </div>
+        
+          <div class="mt-6">
+            <h3 class="text-xl font-light">App Performance: </h3>
+            <div class="mt-2">
+              
+                <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> Memory management | Network efficiency | Battery optimization</p>
+              
+            </div>
+          </div>
+        
+          <div class="mt-6">
+            <h3 class="text-xl font-light">Automated Testing: </h3>
+            <div class="mt-2">
+              
+                <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> Unit tests (JUnit, Mockito, Turbine)</p>
+              
+            </div>
+          </div>
+        
+          <div class="mt-6">
+            <h3 class="text-xl font-light">Professional</h3>
+            <div class="mt-2">
+              
+                <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> CI/CD &amp; DevOps</p>
+              
+                <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> Code Reviews</p>
+              
+                <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> Agile Practices</p>
+              
+                <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> Mentorship &amp; Knowledge Sharing</p>
+              
+            </div>
+          </div>
+        
+    </div>
+  </div>
+</div>
+
+      
+<div class="container mx-auto pt-0 pb-0 px-8">
+  <div class="grid grid-cols-12 gap-8">
+    
+    
+    <div class="col-span-2">
+      <h2 class="mt-6 text-2xl font-semibold">工作经历
+      </h2>
+    </div>
+
+    
+    <div class="col-span-1 border-l-2 border-gray-500"></div>
+
+    
+    <div class="col-span-9">
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">Senior Android Developer</h3>
+        <p class="text-sm font-light">Mar. 2022 - Present | Spark | Auckland</p>
+        <div class="mt-2">
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Led the development of features of the Spark App &amp; Skinny Jump App, improving app performance.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Migrated the Skinny Jump App to Jetpack Compose, reducing UI development time by optimizing widgets.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Deployed the app to Google Play Store, ensuring compliance with store policies and optimizing release processes.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Optimized app performance and resolved stability issues, enhancing code quality and efficiency.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Upgraded apps to the latest Android version, ensuring compatibility and optimal performance.</span></p>
+          
+        </div>
+      </div>
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">Senior Android Developer</h3>
+        <p class="text-sm font-light">Jan. 2021 - Mar. 2022 | MEGA The Privacy Company | Auckland</p>
+        <div class="mt-2">
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Designed and developed new features of the Android App for MEGA, ensuring high performance and scalability.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Architected the meeting project using MVVM and Kotlin, enhancing maintainability and modularity.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Migrated the app to new Android SDK, ensuring full compatibility with the latest OS updates.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Maintained and optimized app performance by leveraging performance analysis tools to identify and resolve resource inefficiencies, memory leaks, and response time issues.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Collaborated effectively with design and QA teams, efficiently managing requirement changes and ensuring smooth project execution.</span></p>
+          
+        </div>
+      </div>
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">Android Engineer</h3>
+        <p class="text-sm font-light">Jul. 2019 - Jan. 2021 | Go Gym Buddy | Auckland</p>
+        <div class="mt-2">
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Developed, maintained, and released an Android application using Java and Kotlin, ensuring code quality and stability.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Refactored the MVP architecture to improve scalability, maintainability, and overall performance.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Optimized application performance, identifying and addressing bottlenecks to improve speed and reduce memory consumption.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Implemented and released new features, aligning with user feedback and business requirements, enhancing the app’s functionality and user experience.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Utilized best practices in Android development to streamline the development process and ensure consistency across releases.</span></p>
+          
+        </div>
+      </div>
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">Senior Technical Manager</h3>
+        <p class="text-sm font-light">Sep. 2016 – Mar. 2018 | Datatist | Shanghai, China</p>
+        <div class="mt-2">
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Led a team of three developers and implemented the Scrum framework to enhance productivity within the Android team.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Designed and developed an easy-to-integrate Android SDK for mass data collection, tailored to customer needs.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Built a hybrid Android application that efficiently processes JSON data from servers and visualizes it using dynamic charts and animations.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Provided technical support to clients, troubleshooting and resolving issues to ensure seamless product integration.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Authored comprehensive technical design documents and specifications for clear development guidelines.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Analyzed client requests and implemented changes to improve functionality and user experience.</span></p>
+          
+        </div>
+      </div>
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">Senior Android Engineer</h3>
+        <p class="text-sm font-light">Dec. 2014 – Sep. 2016 | DynamiCode | Shanghai, China</p>
+        <div class="mt-2">
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Led the development of an Android-based POS project, successfully passing the UnionPay certification test.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Planned, optimized, and refactored existing Android applications for POS terminals to enhance performance and usability.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Developed and launched a new SDK to facilitate seamless integration between customers and the POS terminal.</span></p>
+          
+        </div>
+      </div>
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">Senior Android Engineer</h3>
+        <p class="text-sm font-light">Apr. 2014 - Nov. 2014 | DZH Limited | Shanghai, China</p>
+        <div class="mt-2">
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Collaborated with a mobile team of 40&#43; members, including Android &amp; iOS developers and testers.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Contributed to the development of multiple financial products for the Android platform.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Designed and implemented a trade module for the stock exchange and a business module for financial transactions.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Enhanced mobile app stability by identifying, debugging, and resolving critical issues.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Proposed and implemented optimal coding methodologies aligned with the latest industry best practices and project requirements.</span></p>
+          
+        </div>
+      </div>
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">Software Engineer</h3>
+        <p class="text-sm font-light">Sep. 2005 – Dec. 2013 | Hisense | Qingdao, China</p>
+        <div class="mt-2">
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Led the development of a PC assistant, overseeing PC software integration for Hisense mobile devices.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Developed factory testing applications for mobile phones to ensure quality and performance.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Designed and built multiple applications for the Android and Brew platforms, including Power Saving Assistant, Speech Assistant, and various games.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Contributed to the Hisense smart refrigeration project, enhancing IoT and smart home capabilities.</span></p>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+      
+<div class="container mx-auto pt-0 pb-0 px-8">
+  <div class="grid grid-cols-12 gap-8">
+    
+    
+    <div class="col-span-2">
+      <h2 class="mt-6 text-xl font-semibold">参与项目
+      </h2>
+    </div>
+
+    
+    <div class="col-span-1 border-l-2 border-gray-500"></div>
+
+    
+    <div class="col-span-9">
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">E-commerce Android App (Jetpack Compose &#43; MVVM)</h3>
+        <p class="text-sm font-light">Mar. 2022 - Present | Open Source</p>
+        <div class="mt-2">
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Developed a full-featured e-commerce Android app using Kotlin and Jetpack Compose, following the MVVM architecture.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Integrated Firebase Authentication, Cloud Firestore for real-time data storage, and Stripe API for secure payment processing.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Designed dynamic UI components using Compose, ensuring responsive layouts across various devices and screen sizes.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Implemented push notifications via Firebase Cloud Messaging (FCM), improving customer engagement and retention.</span></p>
+          
+        </div>
+      </div>
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">Fitness Tracking App (Compose &#43; BLE Integration)</h3>
+        <p class="text-sm font-light">Jan. 2021 - Mar. 2022 | Open Source</p>
+        <div class="mt-2">
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Built a health and fitness tracking application using Kotlin and Bluetooth Low Energy (BLE) protocols to connect with wearable devices.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Collected and visualized real-time sensor data like heart rate, steps, and calories burned, using custom Compose components and MPAndroidChart.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Optimized data synchronization and caching mechanisms for offline usability with Room and DataStore.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Implemented background location tracking with proper handling for Android 10&#43; using Foreground Services and notification channels.</span></p>
+          
+        </div>
+      </div>
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">Secure Chat App (Android &#43; WebSocket &#43; End-to-End Encryption)</h3>
+        <p class="text-sm font-light">Jul. 2019 - Jan. 2021 | Open Source</p>
+        <div class="mt-2">
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Designed and developed a secure messaging app featuring real-time chat powered by WebSocket communication.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Implemented End-to-End Encryption (E2EE) using the Signal Protocol, ensuring message confidentiality and integrity.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Built scalable conversation storage with Room Database, using efficient indexing and lazy loading for long conversations.</span></p>
+          
+          <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">Integrated biometric authentication (fingerprint/face ID) for app access control, enhancing user security.</span></p>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+      
+
+<div class="container mx-auto pt-0 pb-0 px-8">
+  <div class="grid grid-cols-12 gap-8">
+
+    
+    <div class="col-span-2">
+      <h2 class="mt-6 text-xl font-semibold ">教育经历
+      </h2>
+    </div>
+
+    
+    <div class="col-span-1 border-l-2 border-gray-500"></div>
+
+    
+    <div class="col-span-9">
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">PGD in Information Technology</h3>
+        <p class="text-sm font-extralight">July 2019 | Eastern Institute of Technology</p>
+      </div>
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">M.S. in Communication and Information System</h3>
+        <p class="text-sm font-extralight">July 2005 | Jilin University</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+      
+
+<div class="container mx-auto pt-0 pb-0 px-8">
+  <div class="grid grid-cols-12 gap-8">
+
+    
+    <div class="col-span-2">
+      <h2 class="mt-6 text-xl font-semibold">认证
+      </h2>
+    </div>
+
+    
+    <div class="col-span-1 border-l-2 border-gray-500"></div>
+
+    
+    <div class="col-span-9">
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">Google Associate Android Developer</h3>
+        <p class="text-sm font-extralight">2025</p>
+      </div>
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">Associate Android Developer certification in Kotlin</h3>
+        <p class="text-sm font-extralight">2024</p>
+      </div>
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-light">Azure Fundamentals - Certifications</h3>
+        <p class="text-sm font-extralight">2024</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+      
+
+<div class="container mx-auto pt-0 pb-0 px-8">
+  <div class="grid grid-cols-12 gap-8">
+    
+    <div class="col-span-2">
+      <h2 class="mt-6 text-xl font-semibold">语言</h2>
+    </div>
+
+    
+    <div class="col-span-1 border-l-2 border-gray-500"></div>
+
+    
+    <div class="col-span-9">
+        
+          <div class="mt-6">
+            <h3 class="text-xl font-light">Chinese</h3>
+            <div class="mt-2">
+              <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> Native</p>
+            </div>
+          </div>
+        
+          <div class="mt-6">
+            <h3 class="text-xl font-light">English</h3>
+            <div class="mt-2">
+              <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> Professional</p>
+            </div>
+          </div>
+        
+          <div class="mt-6">
+            <h3 class="text-xl font-light">Spanish</h3>
+            <div class="mt-2">
+              <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> Professional</p>
+            </div>
+          </div>
+        
+    </div>
+  </div>
+</div>
+
+      
+
+<div class="container mx-auto pt-0 pb-0 px-8">
+  <div class="grid grid-cols-12 gap-8">
+    
+    <div class="col-span-2">
+      <h2 class="mt-6 text-xl font-semibold">兴趣爱好</h2>
+    </div>
+
+    
+    <div class="col-span-1 border-l-2 border-gray-500"></div>
+
+    
+    <div class="col-span-9">
+        
+          <div class="mt-6">
+            
+            <div class="mt-2">
+              <h3 class="text-xl font-light"><span class="text-xl mr-2">•</span> Fitness</h3>
+            </div>
+          </div>
+        
+          <div class="mt-6">
+            
+            <div class="mt-2">
+              <h3 class="text-xl font-light"><span class="text-xl mr-2">•</span> Travelling</h3>
+            </div>
+          </div>
+        
+          <div class="mt-6">
+            
+            <div class="mt-2">
+              <h3 class="text-xl font-light"><span class="text-xl mr-2">•</span> Reading</h3>
+            </div>
+          </div>
+        
+          <div class="mt-6">
+            
+            <div class="mt-2">
+              <h3 class="text-xl font-light"><span class="text-xl mr-2">•</span> Travelling</h3>
+            </div>
+          </div>
+        
+    </div>
+  </div>
+</div>
+
+    </div>
+    <p class="my-8 text-right">Copyright 2025. All rights reserved.</p>
+
+  </div>
+</body>
+
+</html>
