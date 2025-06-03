@@ -1,7 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-US'
 title = 'My New Hugo Site'
-theme = "mammoth-resume-theme"
+theme = "mammoth-slate-resume"
 
 [[menus.main]]
 name = 'Home'

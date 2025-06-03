@@ -3,7 +3,8 @@
     name = "Andy Wu"
     tagline = "Senior Android Engineer"
     avatar = "avatar.png"
-    
+    themename = "Slate Resume"
+
 [summary]
     enable = true
     title = "summary"

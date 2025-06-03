@@ -1,10 +1,10 @@
 <!-- layouts/partials/skills.html -->
 {{ if .Site.Data.config.skills.enable }}
-<div class="container mx-auto p-8">
+<div class="container mx-auto pt-0 pb-0 px-8">
   <div class="grid grid-cols-12 gap-8">
     <!-- Left Column -->
     <div class="col-span-2">
-      <h2 class="text-2xl font-semibold">{{ .Site.Data.config.skills.title | default "Skills" }}</h2>
+      <h2 class="mt-6 text-xl font-semibold">{{ .Site.Data.config.skills.title | default "Skills" }}</h2>
     </div>
 
     <!-- Vertical Divider -->
@@ -14,10 +14,10 @@
     <div class="col-span-9">
         {{ range .Site.Data.config.skills.list }}
           <div class="mt-6">
-            <h3 class="text-xl font-bold">{{ .title }}</h3>
+            <h3 class="text-xl font-light">{{ .title }}</h3>
             <div class="mt-2">
               {{ range .items }}
-                <p><span class="text-xl mr-2">•</span> {{ .details }}</p>
+                <p class="text-sm font-extralight"><span class="text-xl mr-2">•</span> {{ .details }}</p>
               {{ end }}
             </div>
           </div>
