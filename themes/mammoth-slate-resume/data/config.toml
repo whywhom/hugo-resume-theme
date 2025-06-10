@@ -208,50 +208,50 @@
     enable = true
     title = "参与项目"
 
-[[projects.list]]
-    title = "E-commerce Android App (Jetpack Compose + MVVM)"
-    dates = "Mar. 2022 - Present"
-    meta = "Open Source"
-    details = ""
-    [[projects.list.items]]
-    details = "Developed a full-featured e-commerce Android app using Kotlin and Jetpack Compose, following the MVVM architecture."
-    [[projects.list.items]]
-    details = "Integrated Firebase Authentication, Cloud Firestore for real-time data storage, and Stripe API for secure payment processing."
-    [[projects.list.items]]
-    details = "Designed dynamic UI components using Compose, ensuring responsive layouts across various devices and screen sizes."
-    [[projects.list.items]]
-    details = "Implemented push notifications via Firebase Cloud Messaging (FCM), improving customer engagement and retention."
-
     [[projects.list]]
-    title = "Fitness Tracking App (Compose + BLE Integration)"
-    dates = "Jan. 2021 - Mar. 2022"
-    meta = "Open Source"
-    details = ""
-    [[projects.list.items]]
-    details = "Built a health and fitness tracking application using Kotlin and Bluetooth Low Energy (BLE) protocols to connect with wearable devices."
-    [[projects.list.items]]
-    details = "Collected and visualized real-time sensor data like heart rate, steps, and calories burned, using custom Compose components and MPAndroidChart."
-    [[projects.list.items]]
-    details = "Optimized data synchronization and caching mechanisms for offline usability with Room and DataStore."
-    [[projects.list.items]]
-    details = "Implemented background location tracking with proper handling for Android 10+ using Foreground Services and notification channels."
+        title = "E-commerce Android App (Jetpack Compose + MVVM)"
+        dates = "Mar. 2022 - Present"
+        meta = "Open Source"
+        details = ""
+        [[projects.list.items]]
+        details = "Developed a full-featured e-commerce Android app using Kotlin and Jetpack Compose, following the MVVM architecture."
+        [[projects.list.items]]
+        details = "Integrated Firebase Authentication, Cloud Firestore for real-time data storage, and Stripe API for secure payment processing."
+        [[projects.list.items]]
+        details = "Designed dynamic UI components using Compose, ensuring responsive layouts across various devices and screen sizes."
+        [[projects.list.items]]
+        details = "Implemented push notifications via Firebase Cloud Messaging (FCM), improving customer engagement and retention."
 
-    [[projects.list]]
-    title = "Secure Chat App (Android + WebSocket + End-to-End Encryption)"
-    dates = "Jul. 2019 - Jan. 2021"
-    meta = "Open Source"
-    details = ""
-    [[projects.list.items]]
-    details = "Designed and developed a secure messaging app featuring real-time chat powered by WebSocket communication."
-    [[projects.list.items]]
-    details = "Implemented End-to-End Encryption (E2EE) using the Signal Protocol, ensuring message confidentiality and integrity."
-    [[projects.list.items]]
-    details = "Built scalable conversation storage with Room Database, using efficient indexing and lazy loading for long conversations."
-    [[projects.list.items]]
-    details = "Integrated biometric authentication (fingerprint/face ID) for app access control, enhancing user security."
+        [[projects.list]]
+        title = "Fitness Tracking App (Compose + BLE Integration)"
+        dates = "Jan. 2021 - Mar. 2022"
+        meta = "Open Source"
+        details = ""
+        [[projects.list.items]]
+        details = "Built a health and fitness tracking application using Kotlin and Bluetooth Low Energy (BLE) protocols to connect with wearable devices."
+        [[projects.list.items]]
+        details = "Collected and visualized real-time sensor data like heart rate, steps, and calories burned, using custom Compose components and MPAndroidChart."
+        [[projects.list.items]]
+        details = "Optimized data synchronization and caching mechanisms for offline usability with Room and DataStore."
+        [[projects.list.items]]
+        details = "Implemented background location tracking with proper handling for Android 10+ using Foreground Services and notification channels."
+
+        [[projects.list]]
+        title = "Secure Chat App (Android + WebSocket + End-to-End Encryption)"
+        dates = "Jul. 2019 - Jan. 2021"
+        meta = "Open Source"
+        details = ""
+        [[projects.list.items]]
+        details = "Designed and developed a secure messaging app featuring real-time chat powered by WebSocket communication."
+        [[projects.list.items]]
+        details = "Implemented End-to-End Encryption (E2EE) using the Signal Protocol, ensuring message confidentiality and integrity."
+        [[projects.list.items]]
+        details = "Built scalable conversation storage with Room Database, using efficient indexing and lazy loading for long conversations."
+        [[projects.list.items]]
+        details = "Integrated biometric authentication (fingerprint/face ID) for app access control, enhancing user security."
 
 [certifications]
-    enable = true
+    enable = false
     title = "认证"
     [[certifications.list]]
     title = "Google Associate Android Developer"
@@ -276,7 +276,7 @@
     name = "Secure Storage"
 
 [languages]
-    enable = true
+    enable = false
     title = "语言"
     [[languages.list]]
     name = "Chinese"
@@ -290,7 +290,7 @@
 
 
 [interests]
-    enable = true
+    enable = false
     title = "兴趣爱好"
     [[interests.list]]
     name = "Fitness"
