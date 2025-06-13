@@ -1,7 +1,7 @@
 [profile]
     enable = true
     name = "郑丹"
-    tagline = "Senior Android Engineer"
+    tagline = "高级Android开发工程师"
     avatar = "avatar.png"
     themename = "Slate Resume"
 
@@ -310,7 +310,7 @@
     year = "2024"
 
 [tags]
-    enable = true
+    enable = false
     title = "Tags"
     [[tags.list]]
     name = "Kotlin"
