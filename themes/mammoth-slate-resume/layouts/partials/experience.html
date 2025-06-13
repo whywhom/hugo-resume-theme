@@ -16,7 +16,7 @@
       {{ range .Site.Data.config.experience.list }}
       <div class="mt-6">
         <h3 class="text-xl font-light">{{ .title }}</h3>
-        <p class="text-sm font-light">{{ .dates }} | {{ .company }}</p>
+        <p class="text-sm font-light">{{ .dates }} {{ if .company }} | {{ .company }}{{ end }}</p>
         <div class="mt-2">
           {{ range .items }}
           <p><span class="text-xl mr-2">•</span> <span class="text-sm font-light">{{ .details }}</span></p>
