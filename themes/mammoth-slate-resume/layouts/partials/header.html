@@ -1,4 +1,4 @@
-<div class="container mx-auto p-8">
+<div class="w-full mx-auto p-8">
     <div class="flex justify-between items-center">
         <h1 class="text-3xl font-bold">{{ .Site.Data.config.profile.themename }}</h1>
         <div>
@@ -11,20 +11,3 @@
     <p class="mt-2">{{ .Site.Data.config.profile.email }} | {{ .Site.Data.config.profile.location }}</p>
     {{ end }}
 </div>
-<script>
-  if (localStorage.getItem('theme') === 'dark' ||
-      (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark');
-  }
-
-  function toggleDarkMode() {
-    const html = document.documentElement;
-    if (html.classList.contains('dark')) {
-      html.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    } else {
-      html.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    }
-  }
-</script>

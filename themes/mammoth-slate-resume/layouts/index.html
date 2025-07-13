@@ -1,3 +1,4 @@
+{{ define "main" }}
 <!DOCTYPE html>
 <html lang="en" class="bg-white dark:bg-gray-900">
 
@@ -7,28 +8,29 @@
   <title>{{ .Site.Title }}</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<!-- <body class="text-gray-900 dark:text-gray-100 font-sans"> -->
 
-<body class="text-gray-900 dark:text-gray-100 font-sans flex justify-center">
-  <div class="w-[90%] sm:w-[80%] md:w-2/3 max-w-5xl">
-    <!-- ✅ 添加 Header Partial -->
-    {{ partial "header.html" . }}
-    <div class="bg-white shadow-xl border border-gray-300 dark:bg-gray-900 dark:text-white
+<body class="text-gray-900 dark:text-gray-100 font-sans">
+  <div class="flex justify-center">
+    <div class="w-[90%] sm:w-[80%] md:w-[70]">
+      {{ partial "header.html" . }}
+      <div class="bg-white shadow-xl border border-gray-300 dark:bg-gray-900 dark:text-white
     rounded-lg p-8
             print:shadow-none print:border-none print:rounded-none print:p-0">
-      {{ partial "profile.html" . }}
-      {{ partial "summary.html" . }}
-      {{ partial "tags.html" . }}
-      {{ partial "skills.html" . }}
-      {{ partial "experience.html" . }}
-      {{ partial "projects.html" . }}
-      {{ partial "education.html" . }}
-      {{ partial "certifications" . }}
-      {{ partial "languages" . }}
-      {{ partial "interests" . }}
+        {{ partial "profile.html" . }}
+        {{ partial "summary.html" . }}
+        {{ partial "tags.html" . }}
+        {{ partial "skills.html" . }}
+        {{ partial "experience.html" . }}
+        {{ partial "projects.html" . }}
+        {{ partial "education.html" . }}
+        {{ partial "certifications" . }}
+        {{ partial "languages" . }}
+        {{ partial "interests" . }}
+      </div>
+      {{ partial "footer.html" . }}
     </div>
-    {{ partial "footer.html" . }}
   </div>
 </body>
 
 </html>
+{{ end }}

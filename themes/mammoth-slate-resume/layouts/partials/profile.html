@@ -1,35 +1,23 @@
 <!-- layouts/partials/profile.html -->
 {{ if .Site.Data.config.profile.enable }}
 <div class="container mx-auto px-8 py-8 flex items-center">
-    <!-- 左边：头像 + 名字/职位（不flex内部） -->
-    <div class="w-1/2 flex items-center">
-      <img src="{{ .Site.Data.config.profile.avatar }}" alt="Avatar" class="w-24 h-24 rounded-full object-cover">
-      <div class="ml-4">
-        <h1 class="text-3xl font-semibold">{{ .Site.Data.config.profile.name }}</h1>
-        <p class="font-light text-gray-600">{{ .Site.Data.config.profile.tagline }}</p>
-      </div>
+  <!-- 左边：头像 + 名字/职位（不flex内部） -->
+  <div class="w-1/2 flex items-center">
+    <img src="{{ .Site.Data.config.profile.avatar }}" alt="Avatar" class="w-24 h-24 rounded-full object-cover">
+    <div class="ml-4">
+      <h1 class="text-3xl font-semibold">{{ .Site.Data.config.profile.name }}</h1>
+      <p class="font-light text-gray-600">{{ .Site.Data.config.profile.tagline }}</p>
     </div>
-    <!-- 右边：联系信息区域（右侧单独flex） -->
-    <!-- <div class="w-1/2">
-        <div class="grid grid-cols-3 gap-x-8 gap-y-2 justify-end">
-          {{ range .Site.Data.config.contact.list }}
-            <div class="flex items-center space-x-2">
-              <i class="{{ .icon }} text-blue-500"></i>
-              <a href="{{ .url }}" class="text-gray-800 hover:text-blue-500">{{ .text }}</a>
-            </div>
-          {{ end }}
-        </div>
-      </div> -->
-      <div class="w-1/2">
-  <ul class="space-y-2">
-    {{ range .Site.Data.config.contact.list }}
-    <i class="{{ .icon }}"></i>
+  </div>
+  <div class="w-1/2">
+    <ul class="space-y-2">
+      {{ range .Site.Data.config.contact.list }}
       <li class="flex items-center space-x-2">
         <i class="{{ .icon }}"></i>
         <a href="{{ .url }}" class="font-light text-gray-800 hover:text-blue-500">{{ .text }}</a>
       </li>
-    {{ end }}
-  </ul>
-</div>
+      {{ end }}
+    </ul>
   </div>
+</div>
 {{ end }}
